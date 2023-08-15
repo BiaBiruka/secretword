@@ -6,5 +6,5 @@ export const wordsList = {
   profissão: ["Veterinário", "Dentista", "Padeiro", "Escritor", "Tatuador"],
   idioma: ["Francês", "Japonês", "Inglês", "Hindi", "Árabe"],
   cor: ["Magenta", "Ciano", "Roxo", "Bege", "Caramelo"],
-  programação: ["JavaScript", "Cobol", "Java", "Python", "Dart"],
+  música: ["Rock", "Eletrônica", "Samba", "Sertanejo", "Pagode"],
 };
