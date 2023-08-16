@@ -8,10 +8,9 @@ Jogo desenvolvido a partir do curso <a href="https://www.udemy.com/course/react-
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>
 </p>
-<br>
 
 <p align="center">
-  <img alt="Secret Word" src="./public/readmeimg.svg" width="40%"/>
+  <img alt="Secret Word" src="./public/readmeimg.svg" width="35%"/>
 </p>
 
 ## 🚀 Tecnologias utilizadas
