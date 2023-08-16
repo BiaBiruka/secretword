@@ -64,18 +64,19 @@ const Game = ({
           <button>Adivinhar</button>
         </form>
         <p>
-          Dica: Em palavras acentuadas, você precisará colocar os acentos ao
-          adivinhar as letras
+          <span> Dica: </span> Lembre-se de acentuar as letras!
         </p>
       </div>
 
       {/* Letras incorretas */}
       <div className="wrongLetterContainers">
-        <p>Letras utilizadas: </p>
-        {/* Exibe as letras erradas */}
-        {wrongLetters.map((letter, i) => (
-          <span key={i}>{letter}, </span>
-        ))}
+        <p>
+          Letras utilizadas:
+          {/* Exibe as letras erradas */}
+          {wrongLetters.map((letter, i) => (
+            <span key={i}> {letter},</span>
+          ))}
+        </p>
       </div>
     </div>
   );

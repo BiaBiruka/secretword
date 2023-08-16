@@ -1,5 +1,5 @@
 .game h1 {
-  font-size: 2.5em;
+  font-size: 2.2em;
 }
 
 .points span {
@@ -11,9 +11,9 @@
 }
 
 .wordContainer {
-  margin: 1.5em;
-  padding: 1.5em;
-  border: 20px solid rgba(249, 231, 159, 1);
+  margin: 1em;
+  padding: 1em;
+  border: 18px solid rgba(249, 231, 159, 1);
   display: flex;
 }
 
@@ -30,9 +30,9 @@
   font-weight: bold;
 }
 
-.letterContainer p {
+/* .letterContainer p {
   margin-bottom: 1.2em;
-}
+} */
 
 .letterContainer form {
   display: flex;
@@ -46,4 +46,8 @@
   font-size: 2em;
   text-align: center;
   margin-right: 1em;
+}
+
+.letterContainer span {
+  color: rgba(249, 231, 159, 1);
 }
