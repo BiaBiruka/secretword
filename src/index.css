@@ -8,11 +8,15 @@ body {
   margin: 0;
   padding: 0;
   /* Fundo degradê - (graus (180 = cima pra baixo), cor 1 ondeAparece%. cor 2 ondeAparece%) */
-  background: linear-gradient(
-    180deg,
-    rgba(20, 90, 50, 1) 0%,
-    rgba(40, 55, 71, 1) 100%
-  );
+  background: -webkit-gradient(
+      /* Coloca desse jeito pra ele não ficar repetindo o fundo dependendo do tamanho da tela*/
+        linear,
+      left top,
+      left bottom,
+      from(rgba(20, 90, 50, 1)),
+      to(rgba(40, 55, 71, 1))
+    )
+    fixed;
   color: rgba(242, 243, 244, 1);
 }
 
