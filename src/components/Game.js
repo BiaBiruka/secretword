@@ -64,7 +64,7 @@ const Game = ({
           <button>Adivinhar</button>
         </form>
         <p>
-          <span> Dica: </span> Lembre-se de acentuar as letras!
+          <b> Dica: </b> Lembre-se de acentuar as letras!
         </p>
       </div>
 
