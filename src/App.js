@@ -39,6 +39,9 @@ function App() {
   const [guesses, setGuesses] = useState(guessesQty);
   const [score, setScore] = useState(0);
 
+  //Definição da resposta correta para exibir no game over
+  const [answer, setAnswer] = useState("");
+
   // Escolha de palavra e categoria aleatória
   const pickWordAndCategory = useCallback(() => {
     //Escolha de categorias
@@ -115,10 +118,11 @@ function App() {
   useEffect(() => {
     if (guesses === 0) {
       //Se tentativas chegar a 0, apaga todos os dados e vai para o game over
+      setAnswer(pickedWord);
       clearLetterStates();
       setGameStage(stages[2].name);
     }
-  }, [guesses]);
+  }, [guesses, pickedWord]);
 
   // Checa se o usuário acertou a palavra
   useEffect(() => {
@@ -138,6 +142,7 @@ function App() {
     setScore(0);
     setGuesses(guessesQty);
     setGameStage(stages[0].name);
+    setAnswer("");
   };
 
   return (
@@ -157,7 +162,9 @@ function App() {
           score={score}
         />
       )}
-      {gameStage === "end" && <GameOver retry={retry} score={score} />}
+      {gameStage === "end" && (
+        <GameOver retry={retry} score={score} answer={answer} />
+      )}
     </div>
   );
 }

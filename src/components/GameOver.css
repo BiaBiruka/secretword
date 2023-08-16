@@ -2,3 +2,8 @@ h2 span {
   color: rgba(249, 231, 159, 1);
   font-size: 1.5em;
 }
+
+h3 span {
+  color: rgba(249, 231, 159, 1);
+  font-size: 1em;
+}
