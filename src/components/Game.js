@@ -12,7 +12,7 @@ const Game = ({
 }) => {
   // Mudar estado da letra do input
   const [letter, setLetter] = useState("");
-  //Cria uma referência ao imput da letra
+  //Cria uma referência ao input da letra
   const letterInputRef = useRef(null);
 
   // Fazer o submit da letra
