@@ -130,7 +130,10 @@ function App() {
     const uniqueLetters = [...new Set(letters)];
 
     //Se o tamanho da listra de letras corretas adivinhadas for igual ao da lista de letras da palavra, o jogador ganha pontos e recebe outra palavra
-    if (guessedLetters.length === uniqueLetters.length) {
+    if (
+      guessedLetters.length === uniqueLetters.length &&
+      gameStage === stages[1].name
+    ) {
       setScore((actualScore) => (actualScore += 50));
       //Recebendo outra palavra a partir da função já criada
       startGame();
